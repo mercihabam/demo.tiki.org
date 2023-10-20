@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tiki - Demo - Server</title>
     <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="stylesheet" href="dist/index.css">
+    <link rel="stylesheet" href="/dist/index.css">
   </head>
 
   <body>
     <div class="bg-primary w-full p-4 text-white">
       <div class="container mx-auto flex justify-between items-center">
-        <a href="#" class="font-bold text-2xl transition-all hover:text-white">Tiki</a>
-        <div class="flex gap-4 text-gray-300">
-          <a href="#versions" class="font-bold transition-all hover:text-white">Try</a>
-          <a href="#credentials" class="font-bold transition-all hover:text-white">Test credentials</a>
+        <a href="#" class="font-bold text-2xl transition-all hover:text-white uppercase">Tiki</a>
+        <div class="flex gap-4 text-gray-300 uppercase">
+            <a href="#credentials" class="font-bold transition-all hover:text-white">Try tiki</a>
+            <a href="#versions" class="font-bold transition-all hover:text-white">Versions</a>
           <a href="#hints" class="font-bold transition-all hover:text-white">Hints</a>
         </div>
       </div>
@@ -25,6 +25,33 @@
         <h1 class="text-5xl text-center sm:text-7xl font-bold sm:w-2/4 mx-auto">Welcome to the Tiki demo server</h1>
       </div>
     </div>
+
+    <div class="mt-14" id="credentials">
+        <div class="container flex flex-col items-center justify-center mx-auto p-4 space-y-16">
+          <div class="text-center">
+            <div class="flex justify-center items-center gap-2">
+              <div class="h-1 w-20 bg-primary rounded-xl"></div>
+              <h2 class="text-4xl sm:text-6xl font-bold my-4 text-primary">Turn to the Tiki way of life!</h2>
+              <div class="h-1 w-20 bg-primary rounded-xl"></div>
+            </div>
+            <h2 class="text-xl font-semibold">You can test Tiki with the following login</h2>
+          </div>
+  
+          <div class="flex flex-col w-max mx-auto justify-center py-14 px-20 rounded-xl border-2 shadow-lg bg-white font-bold">
+            <div class="">
+              User: admin
+            </div>
+            <div class="">
+              Password: 12345
+            </div>
+          </div>
+          <div class="flex flex-col items-center gap-4 text-gray-500">
+            Pick a version of your choice
+            <img src="/dist/down.svg" class="w-8 h-8 animate-bounce" />
+          </div>
+        </div>
+    </div>
+
     <div class="" id="versions">
       <div class="container min-h-screen flex flex-col justify-center mx-auto p-4 space-y-10">
         <div class="text-center">
@@ -37,7 +64,8 @@
         </div>
 
         <div class="flex items-center justify-center gap-8 flex-col sm:flex-row">
-          <div class="border-2 shadow-lg flex gap-4 flex-col items-center justify-center p-14 rounded-xl">
+          <div class="border-2 relative shadow-lg flex gap-4 flex-col items-center justify-center p-14 rounded-xl">
+            <div class="absolute bg-yellow-500 rounded-tr-xl px-4 py-2 font-bold text-white top-0 right-0">LTS</div>
             <div class="text-6xl font-bold">21.x</div>
             <a href="https://demo.tiki.org/21x/" class="text-white bg-blue-500 block p-2 rounded-md uppercase font-semibold">Try now</a>
           </div>
@@ -51,28 +79,6 @@
           <div class="border-2  shadow-lg flex gap-4 flex-col items-center justify-center p-14 rounded-xl">
             <div class="text-6xl font-bold">26.x</div>
             <a href="https://demo.tiki.org/26x/" class="text-white bg-blue-500 block p-2 rounded-md uppercase font-semibold">Try now</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="" id="credentials">
-      <div class="container flex flex-col justify-center mx-auto p-4 space-y-10">
-        <div class="text-center">
-          <div class="flex justify-center items-center gap-2">
-            <div class="h-1 w-20 bg-primary rounded-xl"></div>
-            <h2 class="text-4xl sm:text-6xl font-bold my-4 text-primary">Turn to the Tiki way of life!</h2>
-            <div class="h-1 w-20 bg-primary rounded-xl"></div>
-          </div>
-          <h2 class="text-xl font-semibold">You can test Tiki with the following login</h2>
-        </div>
-
-        <div class="flex flex-col w-max mx-auto justify-center py-14 px-20 rounded-xl border-2 shadow-lg bg-white font-bold">
-          <div class="">
-            User: admin
-          </div>
-          <div class="">
-            Password: 12345
           </div>
         </div>
       </div>
@@ -104,11 +110,13 @@
           There are other demo sites at <a href="http://info.tiki.org/Demo" class="text-blue-600">info.tiki.org/Demo</a>
         </div>
       </div>
-      <div class="bg-gray-200 p-4 space-y-2">
-        <div class="text-gray-400 font-bold">Admin</div>
-        <div class="flex flex-col">
-            <a href="https://demo.tiki.org/last_update.txt" class="italic text-gray-400 text-sm">Last update</a>
-            <a href="https://demo.tiki.org/last_reset.txt" class="italic text-gray-400 text-sm">Last reset</a>
+      <div class="bg-gray-200">
+        <div class="container space-y-2 p-4">
+            <div class="text-gray-400 font-bold">Admin</div>
+            <div class="flex flex-col">
+                <a href="https://demo.tiki.org/last_update.txt" class="italic text-gray-400 text-sm">Last update</a>
+                <a href="https://demo.tiki.org/last_reset.txt" class="italic text-gray-400 text-sm">Last reset</a>
+            </div>
         </div>
       </div>
     </div>

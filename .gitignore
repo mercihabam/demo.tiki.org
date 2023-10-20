@@ -11,4 +11,3 @@ config/secrets.yml
 tmp/*
 
 node_modules/
-dist/
