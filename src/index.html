@@ -11,11 +11,14 @@
   <body>
     <div class="bg-primary w-full p-4 text-white">
       <div class="container mx-auto flex justify-between items-center">
-        <a href="#" class="font-bold text-2xl transition-all hover:text-white uppercase">Tiki</a>
-        <div class="flex gap-4 text-gray-300 uppercase">
+        <a href="#" class="flex gap-2 items-center text-base sm:text-2xl transition-all hover:text-white">
+          <img src="/dist/tiki-icon.svg" class="filter invert w-10" alt="">
+          <span class="hidden sm:inline">Tiki Wiki CMS Groupware</span>
+        </a>
+        <div class="flex gap-2 sm:gap-4 text-gray-300">
             <a href="#credentials" class="font-bold transition-all hover:text-white">Try tiki</a>
             <a href="#versions" class="font-bold transition-all hover:text-white">Versions</a>
-          <a href="#hints" class="font-bold transition-all hover:text-white">Hints</a>
+          <a href="#notice" class="font-bold transition-all hover:text-white">Notice</a>
         </div>
       </div>
     </div>
@@ -31,10 +34,10 @@
           <div class="text-center">
             <div class="flex justify-center items-center gap-2">
               <div class="h-1 w-20 bg-primary rounded-xl"></div>
-              <h2 class="text-4xl sm:text-6xl font-bold my-4 text-primary">Turn to the Tiki way of life!</h2>
+              <h2 class="text-4xl sm:text-6xl font-bold my-4 text-primary capitalize tracking-tighter">Get a glimpse of the possibilities</h2>
               <div class="h-1 w-20 bg-primary rounded-xl"></div>
             </div>
-            <h2 class="text-xl font-semibold">You can test Tiki with the following login</h2>
+            <h2 class="text-xl font-semibold">You can test Tiki with the following log-in</h2>
           </div>
   
           <div class="flex flex-col w-max mx-auto justify-center py-14 px-20 rounded-xl border-2 shadow-lg bg-white font-bold">
@@ -46,7 +49,7 @@
             </div>
           </div>
           <div class="flex flex-col items-center gap-4 text-gray-500">
-            Pick a version of your choice
+            Pick a version
             <img src="/dist/down.svg" class="w-8 h-8 animate-bounce" />
           </div>
         </div>
@@ -57,10 +60,10 @@
         <div class="text-center">
           <div class="flex justify-center items-center gap-2">
             <div class="h-1 w-20 bg-primary rounded-xl"></div>
-            <h2 class="text-4xl sm:text-6xl font-bold my-4 text-primary">Versions</h2>
+            <h2 class="text-4xl sm:text-6xl font-bold my-4 text-primary capitalize tracking-tighter">Versions</h2>
             <div class="h-1 w-20 bg-primary rounded-xl"></div>
           </div>
-          <h2 class="text-xl font-semibold">Here are the latest Tiki versions running.</h2>
+          <h2 class="text-xl font-semibold">Here are the latest Tiki versions available on this demo server</h2>
         </div>
 
         <div class="flex items-center justify-center gap-8 flex-col sm:flex-row">
@@ -84,30 +87,29 @@
       </div>
     </div>
 
-    <div class="" id="hints">
+    <div class="" id="notice">
       <div class="container min-h-screen flex flex-col justify-center mx-auto p-4 space-y-10">
         <div class="text-center">
           <div class="flex justify-center items-center gap-2">
             <div class="h-1 w-20 bg-primary rounded-xl"></div>
-            <h2 class="text-4xl sm:text-6xl font-bold my-4 text-primary">HINT!</h2>
+            <h2 class="text-4xl sm:text-6xl font-bold my-4 text-primary capitalize tracking-tighter">Please note</h2>
             <div class="h-1 w-20 bg-primary rounded-xl"></div>
           </div>
-          <h2 class="text-xl font-semibold">You can test Tiki with the following login</h2>
         </div>
 
         <div class="flex flex-col items-center justify-center gap-4">
           <div class="bg-yellow-100 border border-yellow-500 px-4 py-2 rounded-xl">
-            All sites will be reset once a week on sunday evenings. This is for experimenting, not for long-lasting data.
+            All sites will be reset once a week on Sunday evenings. This demo site is for experimenting, not for long-lasting data.
           </div>
           <div class="bg-yellow-100 border border-yellow-500 px-4 py-2 rounded-xl">
-            If you try several tiki versions and run into trouble, check your demo.tiki.org cookies and delete them!
+            If you try several Tiki versions and run into trouble, check your demo.tiki.org cookies and delete them.
           </div>
           <div class="bg-yellow-100 border border-yellow-500 px-4 py-2 rounded-xl">
-            If the login box is not visible, just visit /tiki-login_scr.php for the appropriate domain.
+            If the login form is not visible, just visit /login.php for the appropriate domain.
           </div>
         </div>
         <div class="text-gray-700 text-center">
-          There are other demo sites at <a href="http://info.tiki.org/Demo" class="text-blue-600">info.tiki.org/Demo</a>
+          There are other demo sites at <a href="https://tiki.org/Try-Tiki" class="text-blue-600">tiki.org/Try-Tiki</a>
         </div>
       </div>
       <div class="bg-gray-200">
