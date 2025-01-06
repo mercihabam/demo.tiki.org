@@ -41,17 +41,17 @@
     </div>
 
     <div class="mt-14" id="credentials">
-        <div class="container flex flex-col items-center justify-center mx-auto p-4 space-y-16">
+        <div class="container flex flex-col justify-center mx-auto p-4 space-y-16">
           <div class="text-center">
             <div class="flex justify-center items-center gap-2">
-              <div class="h-1 w-20 bg-primary rounded-xl"></div>
+              <div class="h-1 w-20 bg-primary"></div>
               <h2 class="text-4xl sm:text-6xl font-bold my-4 text-primary capitalize tracking-tighter">Get a glimpse of the possibilities</h2>
-              <div class="h-1 w-20 bg-primary rounded-xl"></div>
+              <div class="h-1 w-20 bg-primary"></div>
             </div>
             <h2 class="text-xl font-semibold">You can test Tiki with the following log-in</h2>
           </div>
   
-          <div class="flex flex-col w-max mx-auto justify-center py-14 px-20 rounded-xl border-2 shadow-lg bg-white font-bold">
+          <div class="flex flex-col w-max mx-auto justify-center py-14 px-20 border-x-2 bg-white font-bold">
             <div class="text-center">
               User: admin
             </div>
@@ -70,39 +70,48 @@
       <div class="container min-h-screen flex flex-col justify-center mx-auto p-4 space-y-10">
         <div class="text-center">
           <div class="flex justify-center items-center gap-2">
-            <div class="h-1 w-20 bg-primary rounded-xl"></div>
+            <div class="h-1 w-20 bg-primary"></div>
             <h2 class="text-4xl sm:text-6xl font-bold my-4 text-primary capitalize tracking-tighter">Versions</h2>
-            <div class="h-1 w-20 bg-primary rounded-xl"></div>
+            <div class="h-1 w-20 bg-primary"></div>
           </div>
           <h2 class="text-xl font-semibold">Here are the latest Tiki versions available on this demo server</h2>
         </div>
 
-        <div class="grid sm:grid-cols-2 md:grid-cols-[35%,35%] lg:grid-cols-[30%,30%] gap-8 items-center justify-center">
-          <div class="border-2 relative shadow-lg flex gap-4 flex-col items-center justify-center p-14 rounded-xl">
-            <div class="absolute bg-yellow-500 rounded-tr-xl px-4 py-2 font-bold text-white top-0 right-0">LTS</div>
-            <div class="text-6xl font-bold">21.x</div>
-            <a href="https://doc.tiki.org/Tiki21" target="_blank" class="text-blue-500">See release notes</a>
-            <a href="https://demo.tiki.org/21x/" class="text-white bg-primary block p-2 rounded-md uppercase font-semibold">Try now</a>
+        <div class="flex justify-between flex-wrap">
+          <div class="border-r-2 border-b-2 flex gap-4 flex-col items-center justify-center p-14 w-full sm:w-1/2">
+            <div class="relative">
+              <span class="text-6xl font-bold">28.x</span>
+              <div class="absolute bg-yellow-500 px-4 py-2 font-bold text-white top-0 -right-20 text-xs">Latest</div>
+            </div>
+            <a href="https://doc.tiki.org/Tiki28" target="_blank" class="text-blue-500">See release notes</a>
+            <a href="https://28x.demo.tiki.org/" class="text-white bg-primary block p-2 uppercase font-semibold">Try now</a>
           </div>
 
-          <div class="border-2 relative shadow-lg flex gap-4 flex-col items-center justify-center p-14 rounded-xl">
-            <div class="absolute bg-yellow-500 rounded-tr-xl px-4 py-2 font-bold text-white top-0 right-0">LTS</div>
-            <div class="text-6xl font-bold">24.x</div>
-            <a href="https://doc.tiki.org/Tiki24" target="_blank" class="text-blue-500">See release notes</a>
-            <a href="https://demo.tiki.org/24x/" class="text-white bg-primary block p-2 rounded-md uppercase font-semibold">Try now</a>
-          </div>
-
-          <div class="border-2  shadow-lg flex gap-4 flex-col items-center justify-center p-14 rounded-xl">
-            <div class="text-6xl font-bold">26.x</div>
-            <a href="https://doc.tiki.org/Tiki26" target="_blank" class="text-blue-500">See release notes</a>
-            <a href="https://demo.tiki.org/26x/" class="text-white bg-primary block p-2 rounded-md uppercase font-semibold">Try now</a>
-          </div>
-
-          <div class="border-2 relative shadow-lg flex gap-4 flex-col items-center justify-center p-14 rounded-xl">
-            <div class="absolute bg-yellow-500 rounded-tr-xl px-4 py-2 font-bold text-white top-0 right-0">LTS</div>
-            <div class="text-6xl font-bold">27.x</div>
+          <div class="border-l-2 border-b-2 flex gap-4 flex-col items-center justify-center p-14 w-full sm:w-1/2">
+            <div class="relative">
+              <span class="text-6xl font-bold">27.x</span>
+              <div class="absolute bg-gray-500 px-4 py-2 font-bold text-white top-0 -right-16 text-xs">LTS</div>
+            </div>
             <a href="https://doc.tiki.org/Tiki27" target="_blank" class="text-blue-500">See release notes</a>
-            <a href="https://27x.demo.tiki.org/" class="text-white bg-primary block p-2 rounded-md uppercase font-semibold">Try now</a>
+            <a href="https://27x.demo.tiki.org/" class="text-white bg-primary block p-2 uppercase font-semibold">Try now</a>
+          </div>
+
+          <div class="border-r-2 flex gap-4 flex-col items-center justify-center p-14 w-full sm:w-1/2">
+            <div class="relative">
+              <span class="text-6xl font-bold">24.x</span>
+              <div class="absolute bg-gray-500 px-4 py-2 font-bold text-white top-0 -right-16 text-xs">LTS</div>
+            </div>
+            <a href="https://doc.tiki.org/Tiki24" target="_blank" class="text-blue-500">See release notes</a>
+            <a href="https://demo.tiki.org/24x/" class="text-white bg-primary block p-2 uppercase font-semibold">Try now</a>
+          </div>
+
+          <div class="border-l-2 border-t-2 sm:border-t-0 flex gap-4 flex-col items-center justify-center p-14 w-full sm:w-1/2">
+            <div class="relative">
+              <span class="text-6xl font-bold">21.x</span>
+              <div class="absolute bg-gray-500 px-4 py-2 font-bold text-white top-0 -right-16 text-xs">LTS</div>
+            </div>
+            <a href="https://doc.tiki.org/Tiki21" target="_blank" class="text-blue-500">See release notes</a>
+            <a href="https://demo.tiki.org/21x/" class="text-white bg-primary block p-2 uppercase font-semibold">Try now</a>
           </div>
         </div>
       </div>
@@ -112,20 +121,20 @@
       <div class="container flex flex-col justify-center mx-auto p-4 space-y-10">
         <div class="text-center">
           <div class="flex justify-center items-center gap-2">
-            <div class="h-1 w-20 bg-primary rounded-xl"></div>
+            <div class="h-1 w-20 bg-primary"></div>
             <h2 class="text-4xl sm:text-6xl font-bold my-4 text-primary capitalize tracking-tighter">Please note</h2>
-            <div class="h-1 w-20 bg-primary rounded-xl"></div>
+            <div class="h-1 w-20 bg-primary"></div>
           </div>
         </div>
 
         <div class="flex flex-col items-center justify-center gap-4">
-          <div class="bg-yellow-100 border border-yellow-500 px-4 py-2 rounded-xl">
+          <div class="bg-yellow-100 border border-yellow-500 px-4 py-2">
             All sites will be reset once a week on Sunday evenings. This demo site is for experimenting, not for long-lasting data.
           </div>
-          <div class="bg-yellow-100 border border-yellow-500 px-4 py-2 rounded-xl">
+          <div class="bg-yellow-100 border border-yellow-500 px-4 py-2">
             If you try several Tiki versions and run into trouble, check your demo.tiki.org cookies and delete them.
           </div>
-          <div class="bg-yellow-100 border border-yellow-500 px-4 py-2 rounded-xl">
+          <div class="bg-yellow-100 border border-yellow-500 px-4 py-2">
             If the login form is not visible, just visit /login.php for the appropriate domain.
           </div>
         </div>
