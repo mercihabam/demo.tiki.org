@@ -20,65 +20,66 @@
   </head>
 
   <body>
-    <div class="bg-primary w-full p-4 text-white">
+    <div class="bg-blue-700 w-full p-4 text-white">
       <div class="container mx-auto flex justify-between items-center">
         <a href="#" class="flex gap-2 items-center text-base sm:text-2xl transition-all hover:text-white">
           <img src="/dist/tiki-icon.svg" class="filter invert w-10" alt="">
           <span class="hidden sm:inline">Tiki Wiki CMS Groupware</span>
         </a>
-        <div class="flex gap-2 sm:gap-4 text-gray-300 uppercase" id="nav">
-            <a href="#credentials" class="font-bold transition-all hover:text-white">Try Tiki</a>
+        <div class="flex gap-2 sm:gap-4 text-blue-100 uppercase" id="nav">
+            <a href="#credentials" class="font-bold transition-all hover:text-white">Credentials</a>
             <a href="#versions" class="font-bold transition-all hover:text-white">Versions</a>
-            <a href="#notice" class="font-bold transition-all hover:text-white">Notice</a>
+            <a href="#notice" class="font-bold transition-all hover:text-white">Infos</a>
         </div>
       </div>
     </div>
-    <div class="relative full bg-[url('./pexels.jpg')] bg-cover bg-center">
+    <div class="relative full bg-primary bg-cover bg-center">
       <div class="absolute inset-0 bg-primary opacity-50"></div>
-      <div class="container relative z-10 mx-auto min-h-[60vh] p-4 flex items-center text-white">
-        <h1 class="text-5xl text-center sm:text-7xl font-bold sm:w-2/4 mx-auto">Welcome to the Tiki demo server</h1>
+      <div class="container relative z-10 mx-auto min-h-[60vh] p-4 flex flex-col justify-center text-white">
+        <h1 class="text-5xl sm:text-7xl font-bold">Welcome to the Tiki demo server</h1>
+        <p class="text-3xl font-bold mt-4">Explore the latest Long Term Support releases, test upcoming features, and compare behavior across versions in minutes.</p>
+        <p class="font-semibold mt-4">Every demo is community-maintained to help users, site builders, and developers evaluate Tiki with confidence.</p>
       </div>
     </div>
 
     <div class="mt-14 transition-all" id="credentials">
-        <div class="container flex flex-col justify-center mx-auto p-4 space-y-16">
-          <div class="text-center">
-            <div class="flex justify-center items-center gap-2">
-              <div class="h-1 w-20 bg-primary"></div>
+        <div class="container flex flex-col justify-center mx-auto p-4">
+          <div>
+            <div class="flex items-center gap-2">
               <h2 class="text-4xl sm:text-6xl font-bold my-4 text-primary capitalize tracking-tighter">Get a glimpse of the possibilities</h2>
               <div class="h-1 w-20 bg-primary"></div>
             </div>
-            <h2 class="text-xl font-semibold">You can test Tiki with the following credentials:</h2>
+            <h2 class="text-xl font-semibold">Use the shared account below to log in and test core workflows, administration tools, themes, and configuration options.</h2>
           </div>
   
-          <div class="flex flex-col w-full sm:w-1/2 mx-auto justify-center py-14 px-20 bg-gray-100 font-bold">
-            <div class="text-center">
+          <div class="flex flex-col w-full sm:w-1/2 font-bold italic mt-8 border-l-4 border-blue-400 text-blue-400 pl-4">
+            <div>
               User: admin
             </div>
-            <div class="text-center">
+            <div>
               Password: 12345
             </div>
           </div>
-          <div class="flex flex-col items-center gap-4 text-gray-500">
-            Pick a version
-            <img src="/dist/down.svg" class="w-8 h-8 animate-bounce" />
-          </div>
+
+          <p class="font-semibold mt-8">These environments are public and reset regularly, so avoid storing private or long-term data.</p>
         </div>
     </div>
 
-    <div class="transition-all" id="versions">
+    <div class="transition-all mt-14" id="versions">
       <div class="container min-h-screen flex flex-col justify-center mx-auto p-4 space-y-10">
-        <div class="text-center">
-          <div class="flex justify-center items-center gap-2">
-            <div class="h-1 w-20 bg-primary"></div>
+        <div>
+          <div class="flex items-center gap-2">
             <h2 class="text-4xl sm:text-6xl font-bold my-4 text-primary capitalize tracking-tighter">Versions</h2>
             <div class="h-1 w-20 bg-primary"></div>
           </div>
-          <h2 class="text-xl font-semibold">Here are the latest recommended versions</h2>
+          <h2 class="text-xl font-semibold">Choose a version based on your goals: LTS for production-like testing, newer branches for feature discovery, and trunk for development insight.</h2>
+          <p>Each demo has its own URL, release notes, and lifecycle status to help you pick the right starting point.</p>
         </div>
 
-        <div class="flex flex-wrap justify-center gap-2">
-          <div class="bg-blue-100 flex gap-4 flex-col items-center justify-center p-14 w-full sm:w-1/3">
+        <h2 class="text-2xl font-semibold">LTS Releases</h2>
+
+        <div class="flex flex-wrap gap-2">
+          <div class="bg-blue-100 flex gap-4 flex-col items-center justify-center p-14 w-full sm:w-[49%]">
             <div class="relative">
               <span class="text-6xl font-bold">27.x</span>
               <div class="absolute bg-green-500 px-4 py-2 font-bold text-white top-0 -right-12 text-xs">LTS</div>
@@ -87,7 +88,7 @@
             <a href="https://27x.demo.tiki.org/" class="text-white bg-primary block p-2 uppercase font-semibold">Try now</a>
           </div>
 
-          <div class="bg-blue-100 border-t-0 flex gap-4 flex-col items-center justify-center p-14 w-full sm:w-1/3">
+          <div class="bg-blue-100 border-t-0 flex gap-4 flex-col items-center justify-center p-14 w-full sm:w-[49%]">
             <div class="relative">
               <span class="text-6xl font-bold">24.x</span>
               <div class="absolute bg-green-500 px-4 py-2 font-bold text-white top-0 -right-12 text-xs">LTS</div>
@@ -97,10 +98,14 @@
           </div>
         </div>
 
-        <h2 class="text-xl font-semibold text-center">Other available options</h2>
+        <div class="pt-6">
+          <h2 class="text-2xl font-semibold">Other available options</h2>
+          <p class="font-semibold mt-4">Need to test edge cases or upcoming behavior? These branches provide access to newer changes and transition scenarios.</p>
+          <p>Non-LTS versions may change faster and can differ from production expectations.</p>
+        </div>
 
-        <div class="flex justify-center flex-wrap gap-2">
-          <div class="bg-blue-100 border-l-0 flex gap-4 flex-col items-center justify-center p-14 w-full sm:w-1/3">
+        <div class="flex flex-wrap gap-2">
+          <div class="bg-blue-100 border-l-0 flex gap-4 flex-col items-center justify-center p-14 w-full sm:w-[49%]">
             <div class="relative">
               <span class="text-6xl font-bold">29.x</span>
               <div class="absolute bg-red-500 px-4 py-2 font-bold text-white top-0 -right-16 text-xs">EOL Soon</div>
@@ -109,7 +114,7 @@
             <a href="https://29x.demo.tiki.org/" class="text-white bg-primary block p-2 uppercase font-semibold">Try now</a>
           </div>
 
-          <div class="bg-blue-100 border-t-0 flex gap-4 flex-col items-center justify-center p-14 w-full sm:w-1/3">
+          <div class="bg-blue-100 border-t-0 flex gap-4 flex-col items-center justify-center p-14 w-full sm:w-[49%]">
             <div class="relative">
               <span class="text-6xl font-bold">30.x</span>
               <div class="absolute bg-yellow-500 px-4 py-2 font-bold text-white top-0 -right-32 text-xs">Preview available</div>
@@ -119,28 +124,28 @@
           </div>
         </div>
 
-        <h2 class="text-xl font-semibold text-center">Development branch</h2>
-        <div class="bg-blue-100 flex gap-4 flex-col items-center justify-center p-14 w-full sm:w-1/2 mx-auto">
-          <div class="relative">
-            <span class="text-6xl font-bold">Master</span>
+        <div>
+          <h2 class="text-xl font-semibold">Development branch</h2>
+          <p class="font-semibold mt-4">The trunk demo tracks active development and is best for early feedback, bug verification, and contributor testing.</p>
+          <p>Expect frequent updates, occasional instability, and rapid feature iteration.</p>
+          <div class="flex gap-4 flex-col items-start justify-center w-full sm:w-1/2 mt-4">
+            <a href="https://gitlab.com/tikiwiki/tiki" target="_blank" class="text-blue-500">See the source code</a>
+            <a href="https://trunk.demo.tiki.org/" class="text-white bg-gray-700 block p-4 uppercase font-semibold">Try now</a>
           </div>
-          <a href="https://gitlab.com/tikiwiki/tiki" target="_blank" class="text-blue-500">See the source code</a>
-          <a href="https://trunk.demo.tiki.org/" class="text-white bg-primary block p-2 uppercase font-semibold">Try now</a>
         </div>
       </div>
     </div>
 
-    <div class="transition-all" id="notice">
+    <div class="transition-all py-14" id="notice">
       <div class="container flex flex-col justify-center mx-auto p-4 space-y-10">
-        <div class="text-center">
-          <div class="flex justify-center items-center gap-2">
-            <div class="h-1 w-20 bg-primary"></div>
+        <div>
+          <div class="flex items-center gap-2">
             <h2 class="text-4xl sm:text-6xl font-bold my-4 text-primary capitalize tracking-tighter">Please note</h2>
             <div class="h-1 w-20 bg-primary"></div>
           </div>
         </div>
 
-        <div class="flex flex-col items-center justify-center gap-4">
+        <div class="flex flex-col gap-4">
           <div class="bg-yellow-100 border border-yellow-500 px-4 py-2">
             All sites will be reset once a week on Sunday evenings. This demo site is for experimenting, not for long-lasting data.
           </div>
@@ -151,18 +156,19 @@
             If the login form is not visible, just visit /login.php for the appropriate domain.
           </div>
         </div>
-        <div class="text-gray-700 text-center">
+        <div class="text-gray-700">
           There are other demo sites at <a href="https://tiki.org/Try-Tiki" class="text-blue-600">tiki.org/Try-Tiki</a>
         </div>
       </div>
-      <div class="bg-gray-200 mt-10">
-        <div class="space-y-2 p-4 text-center">
-            <div class="text-gray-400 font-bold">Admin</div>
-            <div class="flex flex-col">
-                <a href="https://demo.tiki.org/last_update.txt" class="italic text-gray-400 text-sm">Last update</a>
-                <a href="https://demo.tiki.org/last_reset.txt" class="italic text-gray-400 text-sm">Last reset</a>
-            </div>
-        </div>
+    </div>
+
+    <div class="bg-gray-200 mt-10">
+      <div class="container mx-auto p-4 flex items-center gap-4">
+          <div class="text-gray-400 font-bold">Admin</div>
+          <div class="flex gap-2">
+              <a href="https://demo.tiki.org/last_update.txt" class="italic text-gray-400 text-sm">Last update</a>
+              <a href="https://demo.tiki.org/last_reset.txt" class="italic text-gray-400 text-sm">Last reset</a>
+          </div>
       </div>
     </div>
 
