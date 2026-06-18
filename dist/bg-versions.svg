@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 700">
+  <style>
+    .h1 { animation: drift1 11s ease-in-out infinite; }
+    .h2 { animation: drift2 15s ease-in-out infinite; }
+    .h3 { animation: drift3  9s ease-in-out infinite; }
+    .h4 { animation: drift1 13s ease-in-out infinite 3s; }
+    .h5 { animation: drift2 10s ease-in-out infinite 1s; }
+    .h6 { animation: drift3 14s ease-in-out infinite 5s; }
+    .h7 { animation: drift1  8s ease-in-out infinite 2s; }
+    @keyframes drift1 {
+      0%, 100% { transform: translateY(0)    rotate(0deg); }
+      50%       { transform: translateY(-22px) rotate(8deg); }
+    }
+    @keyframes drift2 {
+      0%, 100% { transform: translateY(0)   rotate(0deg); }
+      50%       { transform: translateY(18px) rotate(-6deg); }
+    }
+    @keyframes drift3 {
+      0%, 100% { transform: translateY(0)    rotate(0deg); }
+      50%       { transform: translateY(-14px) rotate(10deg); }
+    }
+  </style>
+
+  <!-- Hexagons (flat-top, various sizes) -->
+  <!-- center (150, 200) r=50 -->
+  <polygon class="h1"
+    points="200,200 175,243 125,243 100,200 125,157 175,157"
+    fill="rgba(59,130,246,0.08)" stroke="rgba(59,130,246,0.13)" stroke-width="1"/>
+
+  <!-- center (540, 400) r=70 -->
+  <polygon class="h2"
+    points="610,400 575,461 505,461 470,400 505,339 575,339"
+    fill="rgba(99,102,241,0.07)" stroke="rgba(99,102,241,0.10)" stroke-width="1"/>
+
+  <!-- center (960, 140) r=40 -->
+  <polygon class="h3"
+    points="1000,140 980,175 940,175 920,140 940,105 980,105"
+    fill="rgba(59,130,246,0.09)" stroke="rgba(59,130,246,0.13)" stroke-width="1"/>
+
+  <!-- center (1280, 340) r=60 -->
+  <polygon class="h4"
+    points="1340,340 1310,392 1250,392 1220,340 1250,288 1310,288"
+    fill="rgba(99,102,241,0.06)" stroke="rgba(99,102,241,0.09)" stroke-width="1"/>
+
+  <!-- center (310, 560) r=35 -->
+  <polygon class="h5"
+    points="345,560 327,590 292,590 275,560 292,530 327,530"
+    fill="rgba(59,130,246,0.10)" stroke="rgba(59,130,246,0.14)" stroke-width="1"/>
+
+  <!-- center (850, 510) r=45 -->
+  <polygon class="h6"
+    points="895,510 872,549 828,549 805,510 828,471 872,471"
+    fill="rgba(99,102,241,0.08)" stroke="rgba(99,102,241,0.11)" stroke-width="1"/>
+
+  <!-- center (1100, 70) r=55 -->
+  <polygon class="h7"
+    points="1155,70 1127,118 1073,118 1045,70 1073,22 1127,22"
+    fill="rgba(59,130,246,0.07)" stroke="rgba(59,130,246,0.10)" stroke-width="1"/>
+
+  <!-- Circles for variety -->
+  <circle class="h2" cx="700"  cy="650" r="50" fill="none" stroke="rgba(59,130,246,0.12)"  stroke-width="1.5"/>
+  <circle class="h3" cx="1390" cy="540" r="70" fill="none" stroke="rgba(99,102,241,0.10)"  stroke-width="1.5"/>
+  <circle class="h1" cx="45"   cy="500" r="40" fill="rgba(59,130,246,0.07)" stroke="rgba(59,130,246,0.11)" stroke-width="1"/>
+  <circle class="h5" cx="1100" cy="600" r="30" fill="rgba(99,102,241,0.08)" stroke="rgba(99,102,241,0.12)" stroke-width="1"/>
+</svg>

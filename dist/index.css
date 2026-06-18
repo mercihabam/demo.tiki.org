@@ -579,6 +579,10 @@ video {
   }
 }
 
+.pointer-events-none{
+  pointer-events: none;
+}
+
 .visible{
   visibility: visible;
 }
@@ -669,6 +673,10 @@ video {
   height: 2rem;
 }
 
+.h-full{
+  height: 100%;
+}
+
 .min-h-\[60vh\]{
   min-height: 60vh;
 }
@@ -707,6 +715,12 @@ video {
 
 .animate-bounce{
   animation: bounce 1s infinite;
+}
+
+.select-none{
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 .flex-col{
@@ -765,6 +779,10 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+.overflow-hidden{
+  overflow: hidden;
 }
 
 .border{
@@ -883,6 +901,11 @@ video {
 
 .bg-center{
   background-position: center;
+}
+
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-14{

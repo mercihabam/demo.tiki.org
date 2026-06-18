@@ -15,7 +15,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tiki - Demo - Server</title>
-    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="/dist/favicon.ico">
     <link rel="stylesheet" href="/dist/index.css">
   </head>
 
@@ -35,6 +35,7 @@
     </div>
     <div class="relative full bg-primary bg-cover bg-center">
       <div class="absolute inset-0 bg-primary opacity-50"></div>
+      <img src="/dist/bg-hero.svg" class="absolute inset-0 w-full h-full object-cover pointer-events-none select-none" aria-hidden="true" alt="">
       <div class="container relative z-10 mx-auto min-h-[60vh] p-4 flex flex-col justify-center text-white">
         <h1 class="text-5xl sm:text-7xl font-bold">Welcome to the Tiki demo server</h1>
         <p class="text-3xl font-bold mt-4">Explore the latest Long Term Support releases, test upcoming features, and compare behavior across versions in minutes.</p>
@@ -42,8 +43,9 @@
       </div>
     </div>
 
-    <div class="mt-14 transition-all" id="credentials">
-        <div class="container flex flex-col justify-center mx-auto p-4">
+    <div class="pt-14 transition-all relative overflow-hidden" id="credentials">
+        <img src="/dist/bg-credentials.svg" class="absolute inset-0 w-full h-full object-cover pointer-events-none select-none" aria-hidden="true" alt="">
+        <div class="container relative z-10 flex flex-col justify-center mx-auto p-4">
           <div>
             <div class="flex items-center gap-2">
               <h2 class="text-4xl sm:text-6xl font-bold my-4 text-primary capitalize tracking-tighter">Get a glimpse of the possibilities</h2>
@@ -65,8 +67,9 @@
         </div>
     </div>
 
-    <div class="transition-all mt-14" id="versions">
-      <div class="container min-h-screen flex flex-col justify-center mx-auto p-4 space-y-10">
+    <div class="transition-all mt-14 relative overflow-hidden" id="versions">
+      <img src="/dist/bg-versions.svg" class="absolute inset-0 w-full h-full object-cover pointer-events-none select-none" aria-hidden="true" alt="">
+      <div class="container relative z-10 min-h-screen flex flex-col justify-center mx-auto p-4 space-y-10">
         <div>
           <div class="flex items-center gap-2">
             <h2 class="text-4xl sm:text-6xl font-bold my-4 text-primary capitalize tracking-tighter">Versions</h2>
@@ -156,13 +159,10 @@
             If the login form is not visible, just visit /login.php for the appropriate domain.
           </div>
         </div>
-        <div class="text-gray-700">
-          There are other demo sites at <a href="https://tiki.org/Try-Tiki" class="text-blue-600">tiki.org/Try-Tiki</a>
-        </div>
       </div>
     </div>
 
-    <div class="bg-gray-200 mt-10">
+    <div class="bg-gray-200">
       <div class="container mx-auto p-4 flex items-center gap-4">
           <div class="text-gray-400 font-bold">Admin</div>
           <div class="flex gap-2">
