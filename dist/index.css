@@ -1079,4 +1079,33 @@ video {
     font-size: 4.5rem;
     line-height: 1;
   }
+
+  .sm\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .sm\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .sm\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .sm\:text-8xl{
+    font-size: 6rem;
+    line-height: 1;
+  }
+
+  .sm\:text-sm{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .sm\:font-semibold{
+    font-weight: 600;
+  }
 }
